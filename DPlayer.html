@@ -61,11 +61,57 @@
         },
         {
             time: 10,
-            text: '这是无趣的第 10 分钟',
+            text: '这是有趣的第 10 分钟',
         },
     ],
 
+    // 显示字幕与隐藏字幕
+    // subtitle: {
+    //     url: 'dplayer.vtt',
+    //     type: 'webvtt',
+    //     fontSize: '25px',
+    //     bottom: '10%',
+    //     color: '#b7daff',
+    // },
+
+
     });
+    dp.danmaku.draw({
+    text: 'DIYgod is amazing',
+    color: '#fff',
+    type: 'top',
+});
+
+
+//     dp.switchVideo(
+//     {
+//         url: 'demo.mp4',
+//         // 封面图片
+//         pic: 'demo.png',
+//         // thumbnails: 'second.jpg',
+//     },
+//     {
+//         id: 'test',
+//         api: 'https://api.prprpr.me/dplayer/',
+//         maximum: 3000,
+//         user: 'DIYgod',
+//     },
+//  );
+
+   // 销毁播放器
+    // dp.destroy()
+    
+//     dp.danmaku.send(
+//     {
+//         text: 'dplayer is amazing',
+//         color: '#b7daff',
+//         type: 'right', // should be `top` `bottom` or `right`
+//     },
+//     function() {
+//         console.log('success');
+//     }
+// );
+
 
 
 
