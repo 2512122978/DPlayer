@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/dplayer/dist/DPlayer.min.css">
+</head>
+<body>
+<div style="height: 800px; width: 900px;" id="dplayer"></div>
+</body>
+</html>
+
+<style lang="less">
+
+
+</style>
+
+<script src="node_modules/dplayer/dist/DPlayer.min.js"></script>
+<script>
+    const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        video: {
+            url: 'demo.mp4'
+        },
+        // 输入弹幕
+    //     danmaku: {
+    //     id: '9E2E3368B56CDBB4',
+    //     api: 'https://api.prprpr.me/dplayer/',
+    //     token: 'tokendemo',
+    //     maximum: 1000,
+    //     addition: ['https://api.prprpr.me/dplayer/v3/bilibili?aid=4157142'],
+    //     user: 'DIYgod',
+    //     bottom: '15%',
+    //     unlimited: true,
+    // },
+    // 右键菜单
+    contextmenu: [
+        {
+            text: 'custom1',
+            link: 'https://github.com/DIYgod/DPlayer',
+        },
+        {
+            text: 'custom2',
+            click: (player) => {
+                console.log(player);
+            },
+        },
+        {
+            text: '百度链接',
+            link: 'https://www.baidu.com',
+        },
+    ],
+
+    highlight: [
+        {
+            time: 5,
+            text: '这是无趣的第 5 秒',
+        },
+        {
+            time: 10,
+            text: '这是无趣的第 10 分钟',
+        },
+    ],
+
+    });
+
+
+
+</script>
